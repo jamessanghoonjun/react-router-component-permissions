@@ -1,0 +1,16 @@
+{
+    "/adminonly":{
+        "authorizedTo":["ADMIN"],
+        "exileTo":"/prison"
+    },
+
+    "/manageronly":{
+        "authorizedTo":["MANAGER","ADMIN"],
+        "exileTo":"/notallowed"
+    },
+
+    "/memberonly":{
+        "authorizedTo":["MEMBER","MANAGER","ADMIN"],
+        "exileTo":"/login"
+    }
+}
